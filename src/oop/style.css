@@ -1,0 +1,70 @@
+/* File: style.css */
+
+/* --- Áp dụng cho toàn bộ cửa sổ (VBox) --- */
+.root-pane {
+    /* ĐẶT HÌNH NỀN TẠI ĐÂY */
+    -fx-background-image: url("background.png"); /* Tên file bạn đã lưu */
+    -fx-background-size: cover; /* Phủ đầy cửa sổ */
+    -fx-background-position: center center;
+
+    -fx-font-family: "Segoe UI", Arial, sans-serif;
+}
+
+/* --- MỚI: Container cho form (GridPane) --- */
+.form-container {
+    -fx-background-color: rgba(255, 255, 255, 0.9); /* Nền trắng, mờ 90% */
+    -fx-background-radius: 10px; /* Bo tròn 4 góc */
+    -fx-padding: 30px;
+
+    /* Đổ bóng nhẹ cho đẹp */
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.15), 15, 0, 0, 0);
+}
+
+
+/* --- Tiêu đề (Đăng ký tài khoản) --- */
+.title-label {
+    -fx-font-size: 24px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #2c3e50; /* Màu xanh đen */
+}
+
+/* --- Kiểu dáng chung cho các nhãn (Label) --- */
+.label {
+    -fx-font-size: 14px;
+    -fx-font-weight: 500;
+    -fx-text-fill: #555;
+}
+
+/* --- Kiểu dáng cho các ô nhập liệu --- */
+.text-field, .password-field {
+    -fx-font-size: 14px;
+    -fx-padding: 8px;
+    -fx-border-color: #bdc3c7;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+    -fx-transition: all 0.3s ease-in-out;
+}
+
+/* --- Hiệu ứng khi click vào ô nhập liệu --- */
+.text-field:focused, .password-field:focused {
+    -fx-border-color: #3498db;
+    -fx-border-width: 2px;
+    -fx-background-color: #ffffff;
+    -fx-effect: dropshadow(gaussian, rgba(52, 152, 219, 0.5), 5, 0, 0, 1);
+}
+
+/* --- Nút "Submit" --- */
+.submit-button {
+    -fx-background-color: #3498db;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-font-size: 14px;
+    -fx-padding: 10px 20px;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+}
+
+.submit-button:hover {
+    -fx-background-color: #2980b9;
+    -fx-cursor: hand;
+}
